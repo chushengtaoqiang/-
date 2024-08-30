@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陶强测试版</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        a{
+            display: inline-block;
+            color:black;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        a:hover{
+            border: none;
+           box-shadow: 0 0 10px rgb(255, 0, 162);
+        }
+        a:active{
+            color: red;
+        }
+        :target#html,
+        :target#css,
+        :target#js{
+            display: block;
+        }
+        #html:target{
+            color: red;
+        }
+        #css:target{
+            color: blue;
+            font-weight: bold;
+        }
+        #js:target{
+            color: green;
+        }
+        .content > div{
+            display: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 16px;
+            width: 160px;
+            margin: 30px auto;
+            box-shadow: 0 0 10px #ccc;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#html">陶强帅照</a>
+        <a href="#css">陶强2</a>
+        <a href="#js">陶强3</a>
+    </nav>
+
+    <section class="content">
+        <div id="html">
+            <a href="./img/taoqiang.png">陶强大头贴</a>
+        </div>
+        <div id="css">
+            <a href="./img/野猪陶强.mp4">野猪陶强</a>
+        </div>
+        <div id="js">
+            <a href="./ceshi02.html">陶强问答</a>
+        </div>
+    </section>
+</body>
+</html>
