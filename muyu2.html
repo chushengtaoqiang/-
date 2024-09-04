@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 300px;
+            animation: muyu 0.5s infinite alternate;
+            transform: scale(2.0);
+            text-align: center;
+        }
+        @keyframes muyu{
+            0%{
+                transform: scale(0.8);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+            
+        }
+        @keyframes taoqiang{
+            0%{
+                opacity: 0;
+                transform: translateY(0px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(-20px);
+            }
+        }
+        p{
+            color: aliceblue;
+            animation: taoqiang 0.7s infinite alternate;
+        }
+        #merit p {
+    margin: 15px; 
+    font-weight: bold;
+    /* 颜色渐变效果 */
+    transition: color 1s ease; 
+}
+#merit .big {
+    font-size: 38px; 
+    color: #694b3c;
+}
+    </style>
+    <audio id="shabisound" src="./img/shabi.mp3"></audio>
+</head>
+<body>
+    <img id="muyu" src="./img/taoqiang.png" alt="陶强图片" onclick="addMerit()">
+    <div id="merit">
+        <p class="big">鸡鸡缩短1cm</p>
+    </div>
+</body>
+<script>
+    function addMerit() {
+        var sound = document.getElementById("shabisound");
+    sound.play();
+    document.getElementById('merit').style.display = "block";
+    setTimeout(function(){
+      document.getElementById('merit').style.display = "none";
+    }, 500);
+  }
+</script>
+</html>
